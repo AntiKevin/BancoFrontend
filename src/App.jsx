@@ -8,17 +8,32 @@ import axios from "axios";
 function App() {
 
   const [apiData, setApiData] = useState([])
-  const [dataLoading, setDataLoading] = useState(false)
+  const [dataLoading, setDataLoading] = useState(true)
+  const [nomeOperador, setNomeOperador] = useState(null)
+  const [dataInicio, setDataInicio] = useState('')
+  const [dataFim, setDataFim] = useState('')
 
   useEffect(() => {
-	axios.get('http://localhost:8080/api/transferencia')
-	  .then(function (response) {
-		setApiData(response.data);
-	  })
-	  .catch(function (error) {
-		console.error(error);
-	  })
-  })
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('http://localhost:8080/api/transferencia',{
+			params: {
+				nomeOperador: nomeOperador,
+				dataInicio: dataInicio,
+				dataFim: dataFim,
+			}
+		});
+        setApiData(response.data);
+        setDataLoading(false);
+      } catch (error) {
+        console.error('Erro na requisição:', error);
+        setDataLoading(false);
+      }
+    };
+
+    fetchData();
+
+  }, []);
   
 
   return (
