@@ -6,7 +6,6 @@ import Stack from '@mui/material/Stack';
 import axios from "axios";
 import Filters from "./components/Filters";
 
-
 function App() {
 
   const [apiData, setApiData] = useState([])
