@@ -28,13 +28,13 @@ const Filters = ({dataInicio,
       alignItems="center"
     >
       <LocalizationProvider dateAdapter={AdapterDayjs}>
-        <DatePicker value={dataInicio} 
+        <DatePicker value={dataInicio !== undefined ? dataInicio : null} 
           format="DD/MM/YYYY" 
           label="Data de Inicio" 
           onChange={(newValue) => setDataInicio(newValue)} 
         />
         <DatePicker 
-          value={dataFim} 
+          value={dataFim !== undefined ? dataFim : null} 
           format="DD/MM/YYYY" 
           label="Data de Fim" 
           onChange={(newValue) => setDataFim(newValue)} 
