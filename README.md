@@ -7,7 +7,9 @@
  <img src="https://img.shields.io/static/v1?label=Tipo&message=Desafio&color=8257E5&labelColor=000000" alt="Desafio" />
 </p>
 
-Tabela feita com react e material design para comuniçãp com Api feita em Java com Spring Boot.
+Tabela feita com react e material design para comuniçãp com Api feita em Java com Spring Boot ambos feitos para o desafio para desenvolvedores que se candidataram para a supera.
+## 
+<img src="docs/images/BancoFrontend.png"/>
 
 ## Tecnologias
 
@@ -42,3 +44,12 @@ A aplicação tentará se comunicar com a API que estiver no endereço: [localho
 ## Features
 
 Ao entrar na pagina da tabela você verá os dados da API automaticamente mas também pode utilizar os seguintes recursos:
+
+### Filtro de intervalo de datas independente:
+<img src="docs/images/BancoFrontendFiltroDatas.png"/>
+
+### Filtro de nome do operador da transferencia:
+<img src="docs/images/BancoFrontendFiltroNome.png"/>
+
+### Ordenação	client-side para todas as colunas:
+<img src="docs/images/BancoFrontendOrdenação.png"/>
