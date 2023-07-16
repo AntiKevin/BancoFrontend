@@ -20,9 +20,9 @@ Tabela feita com react e material design para comuniçãp com Api feita em Java 
 
 - DRY, YAGNI, KISS
 - SPA Application
-- requisiçòes a AP com Axios
+- requisiçòes a API com Axios
 - componentização e resiliencia com Material UI
-- Tratamento de Loading e comunicação Assíncrona
+- comunicação assíncrona com tratamento de Loading
 
 ## Como Executar
 
